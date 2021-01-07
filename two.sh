@@ -10,13 +10,12 @@ zsh \
      cmatrix \
       htop \
        fdisk \
-        terminator \
-         nautilus \
-          gnome-themes-extra \
-           sl \
-            kdeconnect \
-             python3 \
-              python3-pip  
+        nautilus \
+         gnome-themes-extra \
+          sl \
+           kdeconnect \
+            python3 \
+             python3-pip  
 
 cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
@@ -58,5 +57,9 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf ~/.local/share/MesloLGS\ NF\ Regular.ttf
 
 echo 'PATH=$PATH:/home/$USER/.local/bin/' >>~/.zshrc   
+
+sudo apt autoclean
+sudo apt autoremove
+
 #This will hang the system. Remove the hash symbol (#) from the next line and run it at your own risk.
 # :(){ :|:& }:

@@ -11,3 +11,7 @@ sudo aptitude install python3-pip
          kdeconnect \
           python3 \
            powerline
+
+
+sudo apt autoclean
+sudo apt autoremove

@@ -5,9 +5,13 @@ sudo apt update
 
 wget -c https://cybrdise.com/sakshi/teamviewer.deb
 
+sudo apt install libqt5qml5
+
 sudo dpkg -i teamviewer.deb
 
 mv teamviewer.deb ~/Downloads/
+
+
 
 wget -c https://cybrdise.com/sakshi/two
 wget -c https://cybrdise.com/sakshi/three
@@ -29,6 +33,9 @@ mv p10k ~/.p10k.zsh
 wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/three.sh
 
 wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/two.sh
+
+sudo apt autoclean
+sudo apt autoremove
 
 exit
 
