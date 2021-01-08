@@ -1,39 +1,35 @@
 sudo apt update
-#sudo apt install aptitude
-
-# TODO this for windows as well through powershell or cmd
 
 wget -c https://cybrdise.com/sakshi/teamviewer.deb
 
-sudo apt install git libqt5qml5
+sudo apt install git libqt5qml5 lolcat cowsay
 
 sudo dpkg -i teamviewer.deb
 
 mv teamviewer.deb ~/Downloads/
 
+wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/four.sh
 wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/three.sh
 wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/two.sh
-wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/teamviewer.sh
 
 chmod +x two.sh
 chmod +x three.sh
-chmod +x teamviewer.sh
+chmod +x four.sh
 
 mkdir ~/Pranav
 
 mv two.sh ~/Pranav/
 mv three.sh ~/Pranav/
-mv teamviewer.sh ~/Pranav/
+mv four.sh ~/Pranav/
+
+cd Pranav
 
 wget -c https://cybrdise.com/sakshi/zshrc
 wget -c https://cybrdise.com/sakshi/bashrc
 wget -c https://cybrdise.com/sakshi/p10k
 
-#mv bashrc ~/.bashrc
-mv zshrc ~/.zshrc
-mv p10k ~/.p10k.zsh
+cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
-sudo apt autoclean
-sudo apt autoremove
+cowsay "Now just send a photo of the ID and Password to Pranav for the rest" | lolcat
 
 teamviewer &

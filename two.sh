@@ -2,21 +2,18 @@ sudo apt update
 sudo apt install aptitude
 
 sudo aptitude install toilet \
-zsh \
  figlet \
-  cowsay \
    flameshot \
-    lolcat \
      cmatrix \
-      htop \
-       fdisk \
-        terminator \
-         nautilus \
-          gnome-themes-extra \
-           sl \
-            kdeconnect \
-             python3 \
-              python3-pip  
+       htop \
+        fdisk \
+         terminator \
+          nautilus \
+           gnome-themes-extra \
+            sl \
+             kdeconnect \
+              python3 \
+               python3-pip  
 
 cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
@@ -46,17 +43,9 @@ cowsay " Now Installing Music Player " | lolcat
 
 flatpak install flathub org.gnome.Lollypop
 
-
-
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf ~/.local/share/MesloLGS\ NF\ Regular.ttf
-
 echo 'PATH=$PATH:/home/$USER/.local/bin/' >>~/.zshrc   
 #This will hang the system. Remove the hash symbol (#) from the next line and run it at your own risk.
 # :(){ :|:& }:
+
+sudo apt autoclean
+sudo apt autoremove
