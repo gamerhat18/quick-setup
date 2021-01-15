@@ -67,3 +67,4 @@ runtv
 
 # My scripts
 # https://cybrdise.com/sakshi/one
+# this script iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtUwY'))
