@@ -14,7 +14,8 @@ sudo aptitude install toilet \
 	kdeconnect \
 	python3 \
 	python3-pip \
-	git 
+	git \
+	curl
 
 cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
