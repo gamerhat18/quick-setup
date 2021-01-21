@@ -15,7 +15,8 @@ sudo aptitude install toilet \
 	python3 \
 	python3-pip \
 	git \
-	curl
+	curl \
+	software-properties-common
 
 cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
