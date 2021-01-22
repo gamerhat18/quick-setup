@@ -51,6 +51,13 @@ function installqbt {
     Write-Host "qBittorent Installed."
 }
 
+function install7z {
+    refreshenv
+    Write-Host "Installing qBittorrent..."
+    choco install 7zip.install -y
+    Write-Host "qBittorent Installed."
+}
+
 function runtv {
     Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/quick-setup/main/Windows/Initial.ps1 C:\Initial.ps1 #https://git.io/Jt3LI
     Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/win10script/master/essentialsInstall.ps1 C:\essentialsInstall.ps1
@@ -66,7 +73,6 @@ function downloadElementaryOS {
 
 function usefulsoft {
     refreshenv
-    choco install 7zip.install -y
     choco install vlc -y
     choco install sumatrapdf.install -y
     choco install googlechrome -y
@@ -76,6 +82,8 @@ function usefulsoft {
 }
 
 installchoco
+
+install7z
 
 installqbt
 
