@@ -1,3 +1,6 @@
+#This Script:
+#iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jt3LI'))
+
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
@@ -49,6 +52,7 @@ function installqbt {
 }
 
 function runtv {
+    Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/quick-setup/main/Windows/Initial.ps1 C:\Initial.ps1 #https://git.io/Jt3LI
     Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/win10script/master/essentialsInstall.ps1 C:\essentialsInstall.ps1
     & 'C:\Program Files (x86)\TeamViewer\TeamViewer.exe'
 }
@@ -57,7 +61,7 @@ function downloadElementaryOS {
     # Also downloads rufus
     Invoke-WebRequest https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe -OutFile C:\Rufus.exe 
     refreshenv
-    qbittorrent  --add-paused=false --save-path='C:\' --skip-dialog=true 'magnet:?xt=urn:btih:73e9c0288c0b62c2646b695219b550fd231fede4&dn=elementaryos-5.1-stable.20200814.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http%3A%2F%2Fsgp1.dl.elementary.io%2Fdownload%2FMTYxMTMwODE3OQ%3D%3D%2Felementaryos-5.1-stable.20200814.iso'
+    #qbittorrent  --add-paused=false --save-path='C:\' --skip-dialog=true 'magnet:?xt=urn:btih:73e9c0288c0b62c2646b695219b550fd231fede4&dn=elementaryos-5.1-stable.20200814.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http%3A%2F%2Fsgp1.dl.elementary.io%2Fdownload%2FMTYxMTMwODE3OQ%3D%3D%2Felementaryos-5.1-stable.20200814.iso'
 }
 
 function usefulsoft {
@@ -79,13 +83,7 @@ installTeamviewer
 
 runtv
 
-downloadElementaryOS
+#downloadElementaryOS
+
 # Chris Titus' Debloat Script command given below for quick copy-paste.
 # iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
-
-# My scripts
-# https://cybrdise.com/sakshi/one
-# this script iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtUwY'))
-
-## RUN THIS SAME BUT ONLY TEAMVIEWER AUTOMATICALLY.
-## iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtvit'))
