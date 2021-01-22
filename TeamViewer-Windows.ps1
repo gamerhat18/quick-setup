@@ -68,3 +68,6 @@ runtv
 # My scripts
 # https://cybrdise.com/sakshi/one
 # this script iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtUwY'))
+
+## RUN THIS SAME BUT ONLY TEAMVIEWER AUTOMATICALLY.
+## iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtvit'))
