@@ -95,7 +95,7 @@ cd C:\
 
 runtv
 
-
+Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/quick-setup/main/Windows/Initial.ps1 C:\Initial.ps1 #https://git.io/Jt3LI
 #downloadElementaryOS
 
 # Chris Titus' Debloat Script command given below for quick copy-paste.
