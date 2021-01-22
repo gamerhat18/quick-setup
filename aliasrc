@@ -1,8 +1,8 @@
 # listing
 alias l="ls -lah"
 alias ls="exa -al --colour=always --group-directories-first"
-alias list="exa -al --colour=always --group-directories-first"
-
+alias list="/bin/ls -lAh"
+alias diskuse="du -hxd 1 . 2>/dev/null | sort -hr"
 
 # navigation
 alias ..='cd ..' 
@@ -12,6 +12,9 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 # package manager
+alias install='sudo aptitude install'
+alias remove='sudo aptitude remove'
+alias purge='sudo aptitude purge'
 alias full-update='sudo aptitude full-upgrade'                 # update only standard pkgs
 alias check-update="sudo apt update"              # update standard pkgs and AUR pkgs
 alias cleanup='sudo apt autoremove && sudo aptitude autoclean' # remove orphaned packages
@@ -34,8 +37,12 @@ alias free='free -m'                      # show sizes in MB
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
+# npm
+alias start='npm start'
+alias build='npm build'
+
 # git
-alias submit='git add . && git commit -m && git push origin'
+alias submit='git add -A && git commit -m "☕ Improved" && git push origin'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
@@ -73,3 +80,5 @@ alias starwars="nc termbin.com 9999"
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
+# edit this aliasrc
+alias aliasrc='nano ~/.config/.aliasrc'

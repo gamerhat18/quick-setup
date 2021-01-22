@@ -60,6 +60,17 @@ function downloadElementaryOS {
     qbittorrent  --add-paused=false --save-path='C:\' --skip-dialog=true 'magnet:?xt=urn:btih:73e9c0288c0b62c2646b695219b550fd231fede4&dn=elementaryos-5.1-stable.20200814.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http%3A%2F%2Fsgp1.dl.elementary.io%2Fdownload%2FMTYxMTMwODE3OQ%3D%3D%2Felementaryos-5.1-stable.20200814.iso'
 }
 
+function usefulsoft {
+    refreshenv
+    choco install 7zip.install -y
+    choco install vlc -y
+    choco install sumatrapdf.install -y
+    choco install googlechrome -y
+    choco install everything -y
+    choco install libreoffice-fresh -y
+
+}
+
 installchoco
 
 installqbt
