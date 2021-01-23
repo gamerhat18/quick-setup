@@ -30,21 +30,15 @@ Here's what it does:
     -> Gets other scripts for more personalized configurations.
 
 # Windows (Administrator Privileges needed)
-- ## **Step 1:** 
-
-    -> Right-click on the Start Menu, and select `Windows Powershell (Admin)`. 
+- **Step 1:** -> Right-click on the Start Menu, and select `Windows Powershell (Admin)`. 
 
 ![*Windows Submenu*](https://raw.githubusercontent.com/gamerhat18/cybrdise-blog-hugo/master/content/posts/images/windows-start-submenu.png)
 
-- ## **Step 2:** 
-
-    -> Click `YES`. Enter Administrator password if asked. 
+- **Step 2:** -> Click `YES`. Enter Administrator password if asked. 
 
 ![*Security Prompt*](https://raw.githubusercontent.com/gamerhat18/cybrdise-blog-hugo/master/content/posts/images/uacprompt.png)
 
-- ## **Step 3:** 
-
-    -> Copy and Paste the following code into the Powershell, and then press `Enter`.
+- **Step 3:** -> Copy and Paste the following code into the Powershell, and then press `Enter`.
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jt3LI'))
 ```
