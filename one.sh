@@ -1,6 +1,7 @@
 sudo apt update
 
 wget -c https://cybrdise.com/sakshi/teamviewer.deb
+wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 
 sudo apt install libqt5qml5 lolcat cowsay zsh -y
 
@@ -24,10 +25,10 @@ mv shell.sh ~/Pranav/
 
 cd ~/Pranav/
 
-wget -c https://cybrdise.com/sakshi/aliasrc
-wget -c https://cybrdise.com/sakshi/zshrc
-wget -c https://cybrdise.com/sakshi/bashrc
-wget -c https://cybrdise.com/sakshi/p10k
+wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/p10k
+wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/aliasrc
+wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/zshrc
+wget -c https://raw.githubusercontent.com/gamerhat18/quick-setup/main/bashrc
 
 cowsay "Hello Sakshi! I am setting up this PC for you! Relax and enjoy the process" | lolcat
 
