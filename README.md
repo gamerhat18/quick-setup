@@ -1,7 +1,7 @@
 # quick-setup
 Easy, Fast, Efficient, Convenient first time setups for Linux and Windows. This allows easy and quick Teamviewer Access to me on a remote computer, regardless of the environment. Also installs essential open-source programs.
 
-# Linux:
+# Linux
 
 <!-- ## **Simple Process:**  -->
 
@@ -29,7 +29,7 @@ Here's what it does:
     -> Opens TeamViewer and I ask the client to send a picture of the ID and password.
     -> Gets other scripts for more personalized configurations.
 
-# Windows (Administrator Privileges needed):
+# Windows (Administrator Privileges needed)
 - ## **Step 1:** 
 
     -> Right-click on the Start Menu, and select `Windows Powershell (Admin)`. 
