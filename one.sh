@@ -1,6 +1,6 @@
 sudo apt update
 
-wget -c https://cybrdise.com/sakshi/teamviewer.deb
+#wget -c https://cybrdise.com/sakshi/teamviewer.deb
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 
 sudo apt install libqt5qml5 lolcat cowsay zsh -y
