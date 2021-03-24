@@ -83,15 +83,15 @@ function usefulsoft {
 
 installchoco
 
-install7z
+#install7z
 
-installqbt
+#installqbt
 
 installTeamviewer
 
 refreshenv
-Invoke-WebRequest https://github.com/ventoy/Ventoy/releases/download/v1.0.33/ventoy-1.0.33-windows.zip -OutFile C:\Ventoy.zip
-cd C:\
+#Invoke-WebRequest https://github.com/ventoy/Ventoy/releases/download/v1.0.33/ventoy-1.0.33-windows.zip -OutFile C:\Ventoy.zip
+#cd C:\
 
 runtv
 
